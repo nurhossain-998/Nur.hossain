@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nur Hossain — Full Stack Developer &amp; Network Engineer</title>
+  <meta name="description" content="Portfolio of Nur Hossain – Full Stack Web Developer and Network Engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="scroll-progress">
+    <div id="scroll-bar"></div>
+  </div>
+  <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-sun" id="theme-icon"></i></button>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" id="nav-logo-trigger">
+        <span class="logo-bracket">&lt;</span>NHN<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="section hero-section">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag fade-up"><i class="fa-solid fa-circle-dot pulse-dot"></i><span>Available for Work</span>
+      </div>
+      <h1 class="hero-title fade-up delay-1"><span class="hero-name" id="hero-name">Nur Hossain</span></h1>
+      <div class="hero-role fade-up delay-2">
+        <span class="role-prefix">I build</span>
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc fade-up delay-3" id="hero-tagline">Full Stack Web Developer &amp; Network Engineer crafting
+        elegant digital experiences and robust network infrastructure solutions.</p>
+      <div class="hero-cta fade-up delay-4">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+        <a href="#" class="btn btn-ghost" id="cv-download-btn"><i class="fa-solid fa-download"></i> Download CV</a>
+      </div>
+      <div class="hero-socials fade-up delay-5">
+        <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual fade-up delay-3">
+      <div class="hero-card">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">portfolio.js</span>
+        </div>
+        <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Nur Hossain"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Full Stack Dev"</span>,
+  <span class="c-prop">skills</span>: [
+    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+    <span class="c-str">"JavaScript"</span>,
+    <span class="c-str">"MikroTik"</span>, <span class="c-str">"CCNA"</span>
+  ],
+  <span class="c-prop">passion</span>: <span class="c-str">"Building things"</span>,
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>
+};</code></pre>
+        <div class="stat-chips">
+          <div class="stat-chip"><i class="fa-solid fa-code"></i> <strong id="hero-projects-count">10+</strong> Projects
+          </div>
+          <div class="stat-chip"><i class="fa-solid fa-star"></i> <strong>100%</strong> Dedicated</div>
+          <div class="stat-chip"><i class="fa-solid fa-network-wired"></i> Network Pro</div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section parallax-section bg-subtle">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-img-frame">
+            <div class="about-img-placeholder" id="about-img-placeholder">
+              <i class="fa-solid fa-user-tie" id="placeholder-icon"></i>
+              <span id="placeholder-name">Nur Hossain</span>
+            </div>
+            <img id="about-profile-img" src="" alt="Nur Hossain" class="profile-photo" style="display:none;" />
+            <div class="img-accent-ring"></div>
+            <div class="img-dot-pattern"></div>
+          </div>
+          <div class="about-badges">
+            <div class="about-badge"><i class="fa-solid fa-graduation-cap"></i> BSc CSE</div>
+            <div class="about-badge"><i class="fa-solid fa-award"></i> MikroTik Certified</div>
+          </div>
+        </div>
+        <div class="about-text reveal delay-1">
+          <h3 class="about-subtitle" id="about-subtitle">Developer by Passion, Engineer by Training</h3>
+          <div class="about-bio" id="about-bio">
+            <p>Hello! I'm <strong>Nur Hossain</strong>, a passionate Full Stack Web Developer and Network Engineer based
+              in Bangladesh. With a strong foundation from my Diploma in CSE and a BSc in Computer Science, I've built
+              expertise across the full spectrum of digital technology.</p>
+            <p>I completed intensive training in <strong>Full Stack Web Development</strong> through the Webstack
+              course, and advanced <strong>Networking Engineering</strong> through ISP StepUp — mastering MikroTik,
+              CCNA, and enterprise-level infrastructure technologies.</p>
+            <p>I thrive at the intersection of elegant frontend design and robust backend architecture, while also being
+              capable of designing and maintaining complex network systems.</p>
+          </div>
+          <div class="about-info-grid">
+            <div class="info-item"><i class="fa-solid fa-map-marker-alt"></i>
+              <div><span>Location</span><strong id="about-location">Bangladesh</strong></div>
+            </div>
+            <div class="info-item"><i class="fa-solid fa-envelope"></i>
+              <div><span>Email</span><strong id="about-email">nurhossain998.nur@gmail.com</strong></div>
+            </div>
+            <div class="info-item"><i class="fa-solid fa-phone"></i>
+              <div><span>Phone</span><strong id="about-phone">+8801813162478</strong></div>
+            </div>
+            <div class="info-item"><i class="fa-solid fa-briefcase"></i>
+              <div><span>Status</span><strong>Open to Work</strong></div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-2"><i class="fa-solid fa-handshake"></i> Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills-section bg-darker">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-tabs reveal">
+        <button class="skills-tab active" data-tab="web"><i class="fa-solid fa-globe"></i> Web Dev</button>
+        <button class="skills-tab" data-tab="networking"><i class="fa-solid fa-network-wired"></i> Networking</button>
+        <button class="skills-tab" data-tab="tools"><i class="fa-solid fa-tools"></i> Tools</button>
+      </div>
+      <div id="skills-container" class="skills-grid reveal delay-1"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects-section parallax-section bg-subtle">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="networking">Networking</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      </div>
+      <div id="projects-container" class="projects-grid reveal delay-1"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services-section bg-darker">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I Offer</span>
+        <h2 class="section-title">My <span class="accent">Services</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div id="services-container" class="services-grid reveal delay-1"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience-section parallax-section bg-subtle">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Experience &amp; <span class="accent">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="exp-tabs reveal">
+        <button class="exp-tab active" data-tab="experience"><i class="fa-solid fa-briefcase"></i> Experience</button>
+        <button class="exp-tab" data-tab="education"><i class="fa-solid fa-graduation-cap"></i> Education</button>
+      </div>
+      <div id="experience-container" class="timeline reveal delay-1"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section bg-darker">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Build Something Together</h3>
+          <p id="contact-intro">Whether you need a website, a network solution, or just want to chat — my inbox is
+            always open.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div><span>Email</span><a href="#" id="contact-email-link">nurhossain998.nur@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div><span>Phone</span><a href="#" id="contact-phone-link">+8801813162478</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-map-pin"></i></div>
+              <div><span>Location</span><strong id="contact-location">Bangladesh</strong></div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal delay-1" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label for="c-name">Full Name</label><input type="text" id="c-name"
+                placeholder="John Doe" required /></div>
+            <div class="form-group"><label for="c-email">Email Address</label><input type="email" id="c-email"
+                placeholder="john@example.com" required /></div>
+          </div>
+          <div class="form-group"><label for="c-subject">Subject</label><input type="text" id="c-subject"
+              placeholder="Project Inquiry" required /></div>
+          <div class="form-group"><label for="c-message">Message</label><textarea id="c-message" rows="5"
+              placeholder="Tell me about your project..." required></textarea></div>
+          <button type="submit" class="btn btn-primary full-width"><i class="fa-solid fa-paper-plane"></i> Send
+            Message</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="nav-logo"><span class="logo-bracket">&lt;/</span>NHN<span
+            class="logo-bracket">&gt;</span></a>
+        <p>&copy; <span id="year"></span> - All the credit goes to Nur Hossain.</p>
+        <div class="footer-links"><a href="#home">Home</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- ============================================================
+       ADMIN PANEL  |  Ctrl+Shift+A  |  #admin  |  Triple-click logo
+       Login: admin / nur2024
+       ============================================================ -->
+  <div id="admin-overlay" class="admin-overlay" style="display:none;">
+
+    <!-- LOGIN -->
+    <div id="admin-login-screen" class="admin-screen-center">
+      <div class="admin-login-card">
+        <div class="admin-icon-badge"><i class="fa-solid fa-shield-halved"></i></div>
+        <h2>Admin Panel</h2>
+        <p class="login-sub">Sign in to manage your portfolio</p>
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" id="admin-username" placeholder="admin" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <div class="pw-field">
+            <input type="password" id="admin-password" placeholder="••••••••" autocomplete="off" />
+            <button type="button" id="pw-toggle" class="pw-eye-btn" tabindex="-1">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div id="admin-error-msg" class="admin-err-box" style="display:none;">
+          <i class="fa-solid fa-triangle-exclamation"></i> Wrong username or password
+        </div>
+        <button class="btn btn-primary full-width" id="admin-login-btn">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </button>
+        <button class="btn btn-ghost full-width" id="admin-cancel-btn" style="margin-top:8px;">
+          Cancel
+        </button>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="admin-dash-screen" class="admin-screen-fill" style="display:none;">
+      <div class="admin-app">
+
+        <!-- Top bar -->
+        <header class="admin-topbar">
+          <div class="atb-left">
+            <div class="admin-icon-badge xs"><i class="fa-solid fa-gauge"></i></div>
+            <span class="atb-title">Portfolio Admin</span>
+          </div>
+          <div class="atb-right">
+            <span class="atb-user"><i class="fa-solid fa-user-shield"></i> Admin</span>
+            <button class="btn btn-ghost btn-sm" id="admin-logout-btn">
+              <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </button>
+            <button class="admin-x-btn" id="admin-close-btn" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </header>
+
+        <!-- Layout -->
+        <div class="admin-body-wrap">
+
+          <!-- Sidebar -->
+          <aside class="admin-side">
+            <button class="aside-btn active" data-target="ap-photo">
+              <i class="fa-solid fa-image"></i><span>Profile Photo</span>
+            </button>
+            <button class="aside-btn" data-target="ap-projects">
+              <i class="fa-solid fa-diagram-project"></i><span>Projects</span>
+            </button>
+            <button class="aside-btn" data-target="ap-skills">
+              <i class="fa-solid fa-code"></i><span>Skills</span>
+            </button>
+            <button class="aside-btn" data-target="ap-services">
+              <i class="fa-solid fa-concierge-bell"></i><span>Services</span>
+            </button>
+            <button class="aside-btn" data-target="ap-timeline">
+              <i class="fa-solid fa-timeline"></i><span>Experience</span>
+            </button>
+            <button class="aside-btn" data-target="ap-info">
+              <i class="fa-solid fa-circle-info"></i><span>Site Info</span>
+            </button>
+          </aside>
+
+          <!-- Content (scrollable) -->
+          <div class="admin-content-scroll">
+
+            <!-- PHOTO -->
+            <section id="ap-photo" class="ap-section active">
+              <div class="ap-header">
+                <h3><i class="fa-solid fa-image"></i> Profile Photo</h3>
+                <p>Your photo appears in the About section. Upload, preview, and apply instantly.</p>
+              </div>
+              <div class="photo-upload-box">
+                <div class="photo-circle-preview" id="photo-circle-preview">
+                  <img id="admin-photo-img" src="" alt="Preview" style="display:none;" />
+                  <div class="photo-empty-state" id="photo-empty-state">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <span>No photo uploaded</span>
+                  </div>
+                </div>
+                <div class="photo-upload-controls">
+                  <p class="photo-filename" id="photo-filename">No file chosen</p>
+                  <p class="photo-hint-text">Recommended: square image · JPG/PNG/WebP · max 2MB</p>
+                  <div class="photo-btn-row">
+                    <label class="btn btn-primary" for="photo-input">
+                      <i class="fa-solid fa-folder-open"></i> Choose File
+                    </label>
+                    <input type="file" id="photo-input" accept="image/*" style="display:none;" />
+                    <button class="btn btn-outline" id="photo-apply-btn">
+                      <i class="fa-solid fa-check-circle"></i> Apply to Portfolio
+                    </button>
+                    <button class="btn btn-ghost" id="photo-remove-btn">
+                      <i class="fa-solid fa-trash"></i> Remove
+                    </button>
+                  </div>
+                  <div id="photo-msg" class="inline-msg" style="display:none;"></div>
+                </div>
+              </div>
+              <div class="info-callout">
+                <i class="fa-solid fa-circle-info"></i>
+                <div>
+                  <strong>How it works:</strong> Select a photo → click <em>Apply to Portfolio</em> → your photo appears
+                  in the About section immediately. Images are saved in browser localStorage.
+                </div>
+              </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="ap-projects" class="ap-section">
+              <div class="ap-header">
+                <h3><i class="fa-solid fa-diagram-project"></i> Manage Projects</h3>
+                <button class="btn btn-primary btn-sm" id="add-project-btn"><i class="fa-solid fa-plus"></i> Add
+                  Project</button>
+              </div>
+              <div id="admin-projects-list" class="adm-list"></div>
+              <div id="project-form-wrap" class="adm-form" style="display:none;">
+                <h4 id="project-form-title">Add Project</h4>
+                <div class="form-row">
+                  <div class="form-group"><label>Title *</label><input type="text" id="pf-title"
+                      placeholder="My Awesome Project" /></div>
+                  <div class="form-group"><label>Category</label>
+                    <select id="pf-category">
+                      <option value="web">Web</option>
+                      <option value="networking">Networking</option>
+                      <option value="fullstack">Full Stack</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group"><label>Description</label><textarea id="pf-desc" rows="3"
+                    placeholder="What does this project do?"></textarea></div>
+                <div class="form-row">
+                  <div class="form-group"><label>Technologies (comma separated)</label><input type="text" id="pf-tech"
+                      placeholder="HTML, CSS, JS" /></div>
+                  <div class="form-group"><label>FA Icon (e.g. <code>fa-globe</code>)</label><input type="text"
+                      id="pf-icon" placeholder="fa-globe" /></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group"><label>Live URL</label><input type="text" id="pf-live"
+                      placeholder="https://myproject.com" /></div>
+                  <div class="form-group"><label>GitHub URL</label><input type="text" id="pf-github"
+                      placeholder="https://github.com/nur/project" /></div>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn-primary" id="save-project-btn"><i class="fa-solid fa-save"></i> Save</button>
+                  <button class="btn btn-ghost" id="cancel-project-btn">Cancel</button>
+                </div>
+              </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="ap-skills" class="ap-section">
+              <div class="ap-header">
+                <h3><i class="fa-solid fa-code"></i> Manage Skills</h3>
+                <button class="btn btn-primary btn-sm" id="add-skill-btn"><i class="fa-solid fa-plus"></i> Add
+                  Skill</button>
+              </div>
+              <div id="admin-skills-list" class="adm-list"></div>
+              <div id="skill-form-wrap" class="adm-form" style="display:none;">
+                <h4 id="skill-form-title">Add Skill</h4>
+                <div class="form-row">
+                  <div class="form-group"><label>Skill Name *</label><input type="text" id="sf-name"
+                      placeholder="JavaScript" /></div>
+                  <div class="form-group"><label>Category</label>
+                    <select id="sf-category">
+                      <option value="web">Web Dev</option>
+                      <option value="networking">Networking</option>
+                      <option value="tools">Tools</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group"><label>Proficiency % (1–100)</label><input type="number" id="sf-level" min="1"
+                      max="100" placeholder="85" /></div>
+                  <div class="form-group"><label>Icon (e.g. <code>fa-brands fa-js</code>)</label><input type="text"
+                      id="sf-icon" placeholder="fa-brands fa-js" /></div>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn-primary" id="save-skill-btn"><i class="fa-solid fa-save"></i> Save</button>
+                  <button class="btn btn-ghost" id="cancel-skill-btn">Cancel</button>
+                </div>
+              </div>
+            </section>
+
+            <!-- SERVICES -->
+            <section id="ap-services" class="ap-section">
+              <div class="ap-header">
+                <h3><i class="fa-solid fa-concierge-bell"></i> Manage Services</h3>
+                <button class="btn btn-primary btn-sm" id="add-service-btn"><i class="fa-solid fa-plus"></i> Add
+                  Service</button>
+              </div>
+              <div id="admin-services-list" class="adm-list"></div>
+              <div id="service-form-wrap" class="adm-form" style="display:none;">
+                <h4 id="service-form-title">Add Service</h4>
+                <div class="form-row">
+                  <div class="form-group"><label>Title *</label><input type="text" id="svf-title"
+                      placeholder="Web Development" /></div>
+                  <div class="form-group"><label>Icon (e.g. <code>fa-laptop-code</code>)</label><input type="text"
+                      id="svf-icon" placeholder="fa-laptop-code" /></div>
+                </div>
+                <div class="form-group"><label>Description</label><textarea id="svf-desc" rows="3"
+                    placeholder="What do you offer?"></textarea></div>
+                <div class="form-group"><label>Features (comma separated)</label><input type="text" id="svf-features"
+                    placeholder="Responsive Design, SEO, Fast Loading" /></div>
+                <div class="form-actions">
+                  <button class="btn btn-primary" id="save-service-btn"><i class="fa-solid fa-save"></i> Save</button>
+                  <button class="btn btn-ghost" id="cancel-service-btn">Cancel</button>
+                </div>
+              </div>
+            </section>
+
+            <!-- TIMELINE -->
+            <section id="ap-timeline" class="ap-section">
+              <div class="ap-header">
+                <h3><i class="fa-solid fa-timeline"></i> Experience &amp; Education</h3>
+                <button class="btn btn-primary btn-sm" id="add-timeline-btn"><i class="fa-solid fa-plus"></i> Add
+                  Entry</button>
+              </div>
+              <div id="admin-timeline-list" class="adm-list"></div>
+              <div id="timeline-form-wrap" class="adm-form" style="display:none;">
+                <h4 id="timeline-form-title">Add Entry</h4>
+                <div class="form-row">
+                  <div class="form-group"><label>Title / Role *</label><input type="text" id="tf-title"
+                      placeholder="Frontend Developer" /></div>
+                  <div class="form-group"><label>Type</label>
+                    <select id="tf-type">
+                      <option value="experience">Experience</option>
+                      <option value="education">Education</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group"><label>Organization</label><input type="text" id="tf-org"
+                      placeholder="Company / University" /></div>
+                  <div class="form-group"><label>Period</label><input type="text" id="tf-period"
+                      placeholder="2022 – Present" /></div>
+                </div>
+                <div class="form-group"><label>Description</label><textarea id="tf-desc" rows="3"
+                    placeholder="What did you do / study?"></textarea></div>
+                <div class="form-actions">
+                  <button class="btn btn-primary" id="save-timeline-btn"><i class="fa-solid fa-save"></i> Save</button>
+                  <button class="btn btn-ghost" id="cancel-timeline-btn">Cancel</button>
+                </div>
+              </div>
+            </section>
+
+            <!-- SITE INFO -->
+            <section id="ap-info" class="ap-section">
+              <div class="ap-header">
+                <h3><i class="fa-solid fa-circle-info"></i> Site Information</h3>
+                <p>Update your name, bio, and contact details. Changes apply instantly.</p>
+              </div>
+              <div class="form-row">
+                <div class="form-group"><label>Your Name</label><input type="text" id="inf-name"
+                    placeholder="Nur Hossain" /></div>
+                <div class="form-group"><label>Projects Count (hero stat)</label><input type="text" id="inf-proj-count"
+                    placeholder="10+" /></div>
+              </div>
+              <div class="form-group"><label>Hero Tagline</label><textarea id="inf-tagline" rows="2"
+                  placeholder="Full Stack Web Developer &amp; Network Engineer..."></textarea></div>
+              <div class="form-group"><label>About Subtitle</label><input type="text" id="inf-about-sub"
+                  placeholder="Developer by Passion, Engineer by Training" /></div>
+              <div class="form-group"><label>About Bio (HTML supported)</label><textarea id="inf-bio" rows="6"
+                  placeholder="&lt;p&gt;Hello! I'm ...&lt;/p&gt;"></textarea></div>
+              <div class="form-row">
+                <div class="form-group"><label>Email</label><input type="text" id="inf-email" /></div>
+                <div class="form-group"><label>Phone</label><input type="text" id="inf-phone" /></div>
+              </div>
+              <div class="form-group"><label>Location</label><input type="text" id="inf-location" /></div>
+              <button class="btn btn-primary" id="save-info-btn"><i class="fa-solid fa-save"></i> Save All Info</button>
+              <div id="info-saved-msg" class="inline-msg success" style="display:none;">
+                <i class="fa-solid fa-circle-check"></i> Saved and applied to portfolio!
+              </div>
+            </section>
+
+          </div><!-- /admin-content-scroll -->
+        </div><!-- /admin-body-wrap -->
+      </div><!-- /admin-app -->
+    </div><!-- /admin-dash-screen -->
+  </div><!-- /admin-overlay -->
+
+  <script src="data.js"></script>
+  <script src="admin.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
